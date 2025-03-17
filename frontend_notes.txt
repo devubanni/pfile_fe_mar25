@@ -1,0 +1,52 @@
+bootstrap, js and react nodes
+day1 monday 17-03-2025
+
+STEPS TO CREATE NEW GIT REPO:
+1: log into github
+2: click on + top right corner click on + icon and select new repository
+3: created a repository with name pfile_fe_mar25 
+4: description "learning front end using html, css, boostrap, js and basics of node by nithin & ashwin from proofile in march25" 
+5: keeping repository acess public
+6: choosing readme file
+7: hit create repository
+
+COMMAND TO DOWNLOAD ANY PUBLIC REPO:
+$ git clone https://github.com/devubanni/pfile_fe_mar25
+
+$ git clones from the cloud to local machine with above url.
+thus, we get a folder of the repo
+
+$ git status
+above command is to check status of remote repo with respect to local repo
+
+$ git pull origin<branch name>
+
+$ git pull origin main 
+the above command pulls(downloads) files from server to local. Only files that are not updated/pulled.
+
+STEPS TO CREATE PERSONAL ACCESS TOKEN(PAT)
+1: on top right corner click profile icon 
+2: among list of options click settings
+3: in new window scroll down a bit and click developer settings 
+4: on left top click on personal acess token select tokens classic
+5: new window click generate buttons select tokens (classic)
+6: new window add releveant note(this PAT created to learn latest tech)
+7: click expiry and select no expiry
+8: select checkbox repo 
+9: scroll down to end and hit generate token 
+10: copy token and mailto self(save PAT nowhere else)
+
+To perform operations on repo from a specific computer, git should recoginze our git account on system
+to achive run following two commands
+$ git config --global user.name "devubanni"
+$ git config --global user.email "fatewritings@gmail.com"
+
+command to sync local repo with remote repo 
+$ git clone https://PAT@github.com/devubanni/pfile_fe_mar25
+
+commands to update remote repo respect to local repo
+$ git add .
+above command git will mark(stage) all files need to be updated in remote, with respect to local repo.
+
+$ git commit -n "releveant message"
+the above command git creates a secured object consisting of all staged files and necessary information.
